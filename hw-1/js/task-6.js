@@ -1,4 +1,3 @@
-"use strict";
 let totall = 0;
 let input;
 do{input = prompt('Введіть число!')

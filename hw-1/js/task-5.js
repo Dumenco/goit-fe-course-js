@@ -1,4 +1,3 @@
-"use strict";
 const China='китай' ;
 const Chile='чилі' ;
 const Australia='австралія' ;
@@ -10,7 +9,6 @@ const deliveryAustralia=170 ;
 const deliveryIndia=80 ;
 const deliveryJamaica=120 ;
 let  delivery = prompt ('Введіть країну в яку потрібно доставити товар!');
-
 if (delivery === null) {
         alert('Відмінено користувачем!');
       } else {  

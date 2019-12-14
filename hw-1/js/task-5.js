@@ -12,8 +12,7 @@ let  delivery = prompt ('Введіть країну в яку потрібно 
 if (delivery === null) {
         alert('Відмінено користувачем!');
       } else {  
-              delivery = delivery.toLowerCase();
-switch (delivery) {
+switch (delivery.toLowerCase()) {
     case China:
             alert(`Доставка в ${China} буде коштувати ${deliveryChina} кредитів`);
                     break;

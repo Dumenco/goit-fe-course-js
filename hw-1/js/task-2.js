@@ -1,9 +1,6 @@
 const total=100;
-// const ordered = 101;
-// const ordered = 100;
-// const ordered = 99;
-const ordered = prompt('Введіть кількість товару для замовлення!'); 
-    if (total<=ordered){
+const ordered = 55;
+     if (total<=ordered){
         console.log('На складі недостатньо товарів!');
     }
     else{

@@ -1,15 +1,13 @@
-const ADMIN_PASSWORD = 'jqueryismyjam';
+const ADMIN_PASSWORD = 'qwerty';
 let message;
 const  logins = prompt('Введіть пароль!');
-    if (!logins) {
-        message = 'Відмінено користувачем!';
-       console.log(message);
-    }
+    if (logins === null){
+          message = 'Відмінено користувачем!';
+    } 
     else if (logins === ADMIN_PASSWORD) {
-        message = 'Вітаємо, доступ дозволено!';
-        console.log(message);
+    message = 'Вітаємо, доступ дозволено!';
     }
-     else {
-        message = 'Доступ заборонено!';
-        console.log(message);
+    else {
+    message = 'Пароль не вірний доступ заборонено!';
     }
+    alert(message);

@@ -3,19 +3,19 @@ const numbers = [];
 let total = 0;
 
 do {
-  input = prompt('Введіть число!')
-  if (Number.isNaN(Number(input))) {
-    alert(`Було введено не вірне число!`)
-    continue
-  }
-  numbers.push(+input)
-} while (input !== null)
+	input = prompt('Введіть число!');
 
-function amount (arr) {
-  for (let i = 0; i < arr.length; i += 1) {
-    total += arr[i];
-  }
-  return `'Загальна сумма чисел рівна = ${total}'`;
+	if (Number.isNaN(Number(input))) {
+		console.log(`Було введено не вірне число!`);
+		continue;
+	}
+	if (input !== null) {
+		numbers.push(Number(input));
+	}
+} while (input !== null);
+if (numbers.length) {
+	for (let i of numbers) {
+		total += i;
+	}
+	console.log(`'Загальна сумма чисел рівна = ${total}'`);
 }
-
-console.log(amount(numbers))

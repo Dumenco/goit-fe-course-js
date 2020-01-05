@@ -5,9 +5,9 @@ const user = {
 	premium: true
 };
 
-user: 'Happi';
-hobby: 'skydiving';
-premium: false;
+user.mode = 'Happi';
+user.hobby = 'skydiving';
+user.premium= false;
 for (let key of Object.keys(user)) {
 	console.log(`${key}:${user[key]}`);
 }

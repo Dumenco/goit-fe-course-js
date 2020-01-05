@@ -6,15 +6,17 @@ const products = [
 ];
 
 const calculateTotalPrice = function(allProdcuts, productName) {
-	for (let i of allProdcuts) {
-		if (i.name === productName) {
-			return i.price * i.quantity;
+	for (let product of allProdcuts) {
+		if (product.name === productName) {
+			return product.price * product.quantity;
 		}
 	}
 };
 
-console.log(calculateTotalPrice(products, 'Радар')); // 5200
+console.log(calculateTotalPrice(products, 'Радар')); 
 
-console.log(calculateTotalPrice(products, 'Дроид')); // 2800
+console.log(calculateTotalPrice(products, 'Дроид')); 
 
-console.log(calculateTotalPrice(products, 'Захват')); //2400
+console.log(calculateTotalPrice(products, 'Захват')); 
+
+console.log(calculateTotalPrice(products, 'Сканер')); 

@@ -22,10 +22,9 @@ class Storage {
 
 const storage = new Storage([ 'Нанитоиды', 'Пролонгер', 'Железные жупи', 'Антигравитатор' ]);
 const items = storage.getItems();
-console.table(items); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор" ]
+console.table(items);
 
 storage.addItem('Дроид');
-console.table(storage.items); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор", "Дроид" ]
-
+console.table(storage.items); 
 storage.removeItem('Пролонгер');
-console.table(storage.items); // [ "Нанитоиды", "Железные жупи", "Антигравитатор", "Дроид" ]
+console.table(storage.items);

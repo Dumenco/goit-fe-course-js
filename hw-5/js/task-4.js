@@ -6,13 +6,13 @@ class StringBuilder {
 		return this._value;
 	}
 	append(value) {
-		return (this._value = this._value += value);
+		 (this._value = this._value += value);
 	}
 	prepend(value) {
-		return (this._value = value += this._value);
+		 (this._value = value += this._value);
 	}
 	pad(value) {
-		return (this._value = value += this._value += value);
+		 (this._value = value += this._value += value);
 	}
 }
 
